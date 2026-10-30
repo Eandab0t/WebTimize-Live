@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "coolmathgames",
+  "name": "Cool Math Games",
+  "version": "1.0.0",
+  "updated": "2026-10-30",
+  "domains": ["coolmathgames.com"],
+  "features": {
+    "cleanup": true,
+    "layout": true,
+    "network": false
+  },
+  "selectors": {
+    "hide": [
+      "[id^=\"leaderboard-\"]",
+      "[id^=\"med-rect-\"]",
+      "[id^=\"sky-\"]",
+      ".ad-placeholder",
+      "#adBanner",
+      ".adLeaderboard",
+      ".adBanner",
+      ".leaderboard_ad",
+      ".pw_report_ad_container",
+      ".playwire_report_ad_link",
+      "#fallMerchPromoTile"
+    ]
+  },
+  "styles": {
+    "cleanup": [],
+    "layout": [
+      "@media (min-width: 1024px) {\n  #main-content .wrapper {\n    max-width: 1600px !important;\n    padding-left: 24px !important;\n    padding-right: 24px !important;\n  }\n}",
+      "body[class^=\"game-\"] main div.flex.flex-row.gap-16 > div:first-child,\nbody[class^=\"game-\"] main div.flex.flex-row.gap-16 > div:last-child {\n  display: none !important;\n}",
+      "body[class^=\"game-\"] main div.flex.flex-row.gap-16 {\n  gap: 0 !important;\n}"
+    ]
+  },
+  "networkRules": [],
+  "compatibility": {
+    "testedAt": "2026-10-30",
+    "testedViewports": ["596x900", "1440x900", "1600x1000"],
+    "notes": "Verified on the homepage and /0-drift-boss. Game iframe, controls, header navigation, and account controls are deliberately untouched. Ad side columns are hidden only on game pages so the game container can use the reclaimed width."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "WebTimize Live",
+  "version": "0.1.0",
+  "description": "Local-first Chrome extension for improving website browsing performance, reducing clutter and applying website-specific enhancements.",
+  "permissions": ["storage", "activeTab", "declarativeNetRequest"],
+  "host_permissions": [
+    "https://www.coolmathgames.com/*",
+    "https://coolmathgames.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.coolmathgames.com/*",
+        "https://coolmathgames.com/*"
+      ],
+      "js": [
+        "src/shared/settings.js",
+        "src/shared/profile.js",
+        "src/shared/engine.js",
+        "src/content/content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_title": "WebTimize Live",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "options_page": "src/options/options.html"
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebTimize Live — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">W</div>
+        <div>
+          <p class="eyebrow">Local-first browsing</p>
+          <h1>WebTimize Live</h1>
+        </div>
+      </div>
+      <p class="lede">Tested, site-specific layout patches. No account, no proxy, no remote code.</p>
+    </header>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Global protection</h2>
+          <p>Turn every supported profile on or off.</p>
+        </div>
+        <label class="switch">
+          <input id="globalToggle" type="checkbox" aria-label="Enable WebTimize Live">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Default features</h2>
+          <p>Used for sites without an override.</p>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <label class="check-row">
+          <input id="defaultCleanup" type="checkbox">
+          <span><strong>Page cleanup</strong><small>Hide verified ad placeholders.</small></span>
+        </label>
+        <label class="check-row">
+          <input id="defaultLayout" type="checkbox">
+          <span><strong>Layout recovery</strong><small>Reclaim wasted margins and side rails.</small></span>
+        </label>
+        <label class="check-row">
+          <input id="defaultNetwork" type="checkbox">
+          <span><strong>Network rules</strong><small>Only when a profile ships verified rules.</small></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Supported sites</h2>
+          <p>Per-site switches override the defaults.</p>
+        </div>
+      </div>
+      <div id="sitesList" class="sites"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Site exceptions</h2>
+          <p>These domains are never modified.</p>
+        </div>
+      </div>
+      <form id="exceptionForm" class="inline-form">
+        <label class="sr-only" for="exceptionInput">Domain to exclude</label>
+        <input id="exceptionInput" type="text" inputmode="url" autocomplete="off" placeholder="example.com">
+        <button type="submit">Add exception</button>
+      </form>
+      <div id="exceptionsList" class="chips"></div>
+    </section>
+
+    <section class="panel privacy">
+      <div>
+        <h2>Privacy and limits</h2>
+        <p>Settings stay in Chrome sync storage. Profiles are local extension files. WebTimize Live sends no browsing data anywhere and does not run remote JavaScript.</p>
+        <p class="muted">It cannot rewrite every website response, remove every advertisement, or guarantee that a site's layout will never change. Profiles are versioned and can be disabled at any time.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <button id="restoreButton" class="button secondary" type="button">Restore defaults</button>
+      <span id="saveState" class="save-state" role="status" aria-live="polite">Saved locally</span>
+    </footer>
+  </main>
+  <script src="../shared/settings.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

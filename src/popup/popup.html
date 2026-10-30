@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebTimize Live</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="brand">
+      <div class="mark" aria-hidden="true">W</div>
+      <div class="brand-copy">
+        <h1>WebTimize Live</h1>
+        <p>Local page cleanup</p>
+      </div>
+      <span id="globalState" class="pill">On</span>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <div>
+          <span class="label">Protection</span>
+          <span class="help">Apply supported site profiles on this device.</span>
+        </div>
+        <label class="switch">
+          <input id="globalToggle" type="checkbox" aria-label="Enable WebTimize Live">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <section id="siteCard" class="card" hidden>
+      <div class="site-head">
+        <div>
+          <span class="eyebrow">This website</span>
+          <h2 id="siteName">Current site</h2>
+        </div>
+        <span id="siteStatus" class="status">Active</span>
+      </div>
+
+      <div class="row">
+        <div>
+          <span class="label">Page cleanup</span>
+          <span class="help">Hide verified ad placeholders and promotional slots.</span>
+        </div>
+        <label class="switch">
+          <input id="cleanupToggle" type="checkbox" aria-label="Enable page cleanup">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="row">
+        <div>
+          <span class="label">Layout recovery</span>
+          <span class="help">Return wasted margins and side rails to the page.</span>
+        </div>
+        <label class="switch">
+          <input id="layoutToggle" type="checkbox" aria-label="Enable layout recovery">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="row">
+        <div>
+          <span class="label">Network rules</span>
+          <span class="help">Optional request blocking from this profile.</span>
+        </div>
+        <label class="switch">
+          <input id="networkToggle" type="checkbox" aria-label="Enable network rules">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <p id="networkHint" class="hint" hidden>This profile ships without network rules.</p>
+      <p id="profileMeta" class="meta"></p>
+    </section>
+
+    <section id="unsupportedCard" class="card empty" hidden>
+      <span class="eyebrow">Not supported yet</span>
+      <h2 id="unsupportedTitle">No profile for this site</h2>
+      <p class="help">WebTimize Live only changes sites with a tested, versioned profile. Nothing on this page has been modified.</p>
+    </section>
+
+    <footer class="footer">
+      <button id="settingsButton" class="text-button" type="button">Settings</button>
+      <span id="version" class="version"></span>
+    </footer>
+  </main>
+  <script src="../shared/settings.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "profiles": [
+    {
+      "domain": "coolmathgames.com",
+      "file": "coolmathgames.com.json"
+    }
+  ]
+}
