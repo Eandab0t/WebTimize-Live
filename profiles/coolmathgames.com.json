@@ -28,15 +28,13 @@
   "styles": {
     "cleanup": [],
     "layout": [
-      "@media (min-width: 1024px) {\n  #main-content .wrapper {\n    max-width: 1600px !important;\n    padding-left: 24px !important;\n    padding-right: 24px !important;\n  }\n}",
-      "body[class^=\"game-\"] main div.flex.flex-row.gap-16 > div:first-child,\nbody[class^=\"game-\"] main div.flex.flex-row.gap-16 > div:last-child {\n  display: none !important;\n}",
-      "body[class^=\"game-\"] main div.flex.flex-row.gap-16 {\n  gap: 0 !important;\n}"
+      "@media (min-width: 1024px) {\n  #main-content .wrapper {\n    max-width: 1600px !important;\n    padding-left: 24px !important;\n    padding-right: 24px !important;\n  }\n}"
     ]
   },
   "networkRules": [],
   "compatibility": {
     "testedAt": "2026-10-30",
     "testedViewports": ["596x900", "1440x900", "1600x1000"],
-    "notes": "Verified on the homepage and /0-drift-boss. Game iframe, controls, header navigation, and account controls are deliberately untouched. Ad side columns are hidden only on game pages so the game container can use the reclaimed width."
+    "notes": "Verified on the homepage and /0-drift-boss. Game iframe, controls, header navigation, and account controls are deliberately untouched. Current game pages render the game full width, so no side-rail rule is applied; only verified ad placeholders are hidden with display:none."
   }
 }

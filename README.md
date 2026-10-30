@@ -18,15 +18,16 @@ alone; it does not request `<all_urls>`.
 
 - **Page cleanup** — hides ad placeholders (`leaderboard-*`, `med-rect-*`, `sky-*`, `adBanner`) and
   the merchandise promo tile with scoped CSS.
-- **Layout recovery** — on desktop, widens the content wrapper; on game pages, removes the two ad
-  side columns so the game container can use the reclaimed width.
+- **Layout recovery** — on desktop, widens the content wrapper. Game pages already render the game
+  full width, so no game-page layout rule is shipped.
 - **Per-site controls** — global on/off, site on/off, and independent cleanup/layout/network
   switches.
 - **Site profiles** — versioned JSON, validated locally before use.
 - **Optional network rules** — the service worker can turn profile-provided DNR rules into dynamic
   rules. The first profile ships none, so the UI disables that switch.
-- **Reversible** — all page changes are one injected stylesheet. Disabling the extension or a site
-  removes it; the site's DOM and JavaScript are not replaced.
+- **Reversible, non-destructive** — all page changes are one injected stylesheet. Cleanup uses
+  `display: none`; no element is deleted from the DOM. Disabling the extension or a site removes the
+  stylesheet; the site's DOM and JavaScript are not replaced.
 
 ## Architecture
 
@@ -81,7 +82,8 @@ Verified on 2026-10-30 at 596×900, 1440×900, and 1600×1000 on the homepage an
 - Hidden: verified ad placeholders, ad banner containers, report-ad links, merchandise promo tile.
 - Preserved: game iframe and controls, header navigation, account controls, game promotion cards,
   footer navigation.
-- Layout: desktop content wrapper expands to 1600px; game-page ad side columns are removed.
+- Layout: desktop content wrapper expands to 1600px. The game page already renders the game full
+  width, so the profile ships no game-page layout rule.
 - Known limits: first-party creatives that use normal page markup, ads inside cross-origin iframes,
   and future site redesigns are not guaranteed. Use the popup to disable a site immediately.
 
@@ -92,11 +94,15 @@ npm test
 ```
 
 Covers profile schema validation, domain matching, default/per-site settings, exception handling,
-CSS composition, manifest version, narrow permissions, and referenced local files. No dependencies
-are installed.
+CSS composition, manifest version, narrow permissions, referenced local files, and that layout
+rules never hide content. No dependencies are installed.
 
-Real-page selector checks were performed against the live Coolmath homepage and game page in Chrome
-during development. Browser-level automated extension loading is not part of the test suite.
+The extension was also loaded unpacked in Chromium 143 through Playwright and exercised against the
+live site at 1440×900 and 596×900: stylesheet application, ad hiding, preserved navigation, the
+game canvas route, popup and options rendering, cleanup/global toggles, restart persistence, and
+absence of extension page errors (21 checks). Chrome's branded build ignores `--load-extension` for
+automation, so loading `chrome://extensions` → **Load unpacked** remains the way to test in Chrome
+itself; that manual load is not automated here.
 
 ## Privacy and permissions
 

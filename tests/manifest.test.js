@@ -31,6 +31,11 @@ test("every referenced local file exists", () => {
   }
 });
 
+test("popup CSS lets the hidden attribute hide cards", () => {
+  const css = fs.readFileSync(path.join(root, "src/popup/popup.css"), "utf8");
+  assert.match(css, /\[hidden\]\s*\{[^}]*display:\s*none\s*!important/);
+});
+
 test("content scripts run at document_start and are top-frame only", () => {
   for (const script of manifest.content_scripts) {
     assert.equal(script.run_at, "document_start");

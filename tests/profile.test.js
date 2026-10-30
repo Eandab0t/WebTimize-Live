@@ -26,6 +26,13 @@ test("Coolmath profile targets verified ad containers only", () => {
   assert.ok(!coolmath.data.selectors.hide.some((selector) => selector.includes("iframe")));
 });
 
+test("Coolmath layout rules adjust space without hiding content", () => {
+  const coolmath = profiles.find((entry) => entry.data.id === "coolmathgames");
+  for (const css of coolmath.data.styles.layout) {
+    assert.doesNotMatch(css, /display\s*:\s*none/i);
+  }
+});
+
 test("domain matching includes subdomains and strips www ambiguity", () => {
   assert.equal(matches("www.coolmathgames.com", ["coolmathgames.com"]), true);
   assert.equal(matches("coolmathgames.com", ["www.coolmathgames.com"]), true);
