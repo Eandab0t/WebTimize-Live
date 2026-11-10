@@ -19,7 +19,13 @@ tooling.
 npm run build          # dist/chrome and dist/firefox
 npm run build:chrome
 npm run build:firefox
+powershell -NoProfile -File scripts/package-extension.ps1 chrome
+powershell -NoProfile -File scripts/package-extension.ps1 firefox
 ```
+
+The packaging script creates a clean store-submission ZIP from a validated build. It refuses to
+overwrite an existing archive unless `-Force` is supplied. Review the store metadata and privacy
+policy in [CHROMEWEBSTORE.md](CHROMEWEBSTORE.md) before submitting.
 
 **Chrome:** open `chrome://extensions`, enable **Developer mode**, choose **Load unpacked**, and
 select `dist/chrome`.
@@ -244,3 +250,9 @@ local proxy and cannot rewrite arbitrary HTTP response bodies.
 `package.json`, `manifest.json` and [CHANGELOG.md](CHANGELOG.md) move together; the current version is
 0.3.0. The generated Firefox manifest adds only build-specific background metadata under
 `browser_specific_settings`; the permission set is unchanged.
+
+## License
+
+WebTimize Live is released under the MIT License. See [LICENSE](LICENSE).
+The generated Chrome and Firefox builds include the license file. The extension has no
+runtime third-party dependencies.

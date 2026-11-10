@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- **Licensing**: MIT `LICENSE`, package metadata and a copy of the license in both generated
+  extension builds.
+
 ## 0.3.0 — 2026-11-07
 
 ### Added

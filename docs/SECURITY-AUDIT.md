@@ -134,9 +134,13 @@ npm test
 90 tests, 90 pass, 0 fail
 ```
 
-The six selector cases run in the existing profile test; the full suite was run after the
-validation change. The browser-level disable/re-enable and service-worker restart evidence
-is in `docs/browser-verification.md` and the ignored `__development/experiments/` directory.
+That block preserves the 0.2.0 audit-run result. The six selector cases run in the existing
+profile test; the full suite was run after the validation change. The browser-level
+disable/re-enable and service-worker restart evidence is in `docs/browser-verification.md` and
+the ignored `__development/experiments/` directory.
+
+On 2026-11-10 the current 0.3.0 suite was rerun without changing audit findings:
+`npm test` reported **96 tests, 96 pass, 0 failed**.
 
 ## Remaining risk
 

@@ -77,7 +77,7 @@ function build(browser) {
   const directory = path.join(DIST, browser);
   fs.rmSync(directory, { recursive: true, force: true });
   fs.mkdirSync(directory, { recursive: true });
-  for (const entry of ['icons', 'profiles', 'src']) {
+  for (const entry of ['LICENSE', 'icons', 'profiles', 'src']) {
     fs.cpSync(path.join(ROOT, entry), path.join(directory, entry), { recursive: true });
   }
   const manifest = manifestFor(browser);

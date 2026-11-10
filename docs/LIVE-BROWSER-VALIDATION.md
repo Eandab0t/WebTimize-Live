@@ -30,8 +30,8 @@ sparse settings object; initial controls are disabled until the async load compl
 
 After the fixes, `npm run browser:readiness` passed all nine checks again on Chrome
 157.0.8103.39: extension loaded, stylesheet applied, setting reached the page, disable removed it,
-re-enable restored it, and the MV3 worker restarted. The suite now has **90 tests**, including
-popup status/label markup checks. A 2026-11-07 readiness rerun after that markup change also
+re-enable restored it, and the MV3 worker restarted. The suite had **90 tests at that 0.2.0 checkpoint**, including
+popup status/label markup checks; the current 0.3.0 baseline is **96 tests**. A 2026-11-07 readiness rerun after that markup change also
 passed 9/9 on the same Chrome build. `npm run browser:options` also passed: the
 options page loaded enabled controls and clicking the site switch on an excepted site cleared the
 exception without adding a per-site override. The local-only evidence is
