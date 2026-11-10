@@ -1,0 +1,36 @@
+name: Build release artifacts
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  artifacts:
+    name: Build and attach browser packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install and test
+        run: |
+          npm install --ignore-scripts
+          npm test
+
+      - name: Build browser packages
+        run: |
+          npm run build
+          pwsh -NoProfile -File scripts/package-extension.ps1 -Browser chrome -ForSubmission
+          pwsh -NoProfile -File scripts/package-extension.ps1 -Browser firefox -ForSubmission
+
+      - name: Attach packages to GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$RELEASE_TAG" dist/*.zip --clobber
