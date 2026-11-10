@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "coolmathgames",
   "name": "Cool Math Games",
-  "version": "1.0.0",
-  "updated": "2026-10-30",
+  "version": "1.0.1",
+  "updated": "2026-11-05",
   "domains": ["coolmathgames.com"],
   "features": {
     "cleanup": true,
@@ -33,8 +33,8 @@
   },
   "networkRules": [],
   "compatibility": {
-    "testedAt": "2026-10-30",
-    "testedViewports": ["596x900", "1440x900", "1600x1000"],
-    "notes": "Verified on the homepage and /0-drift-boss. Game iframe, controls, header navigation, and account controls are deliberately untouched. Current game pages render the game full width, so no side-rail rule is applied; only verified ad placeholders are hidden with display:none."
+    "testedAt": "2026-11-05",
+    "testedViewports": ["596x900", "1024x900", "1280x900", "1440x900", "1600x900", "1920x900", "2560x900"],
+    "notes": "Verified on the homepage and /0-drift-boss. Game iframe, controls, header navigation, and account controls are deliberately untouched. Current game pages render the game full width, so no side-rail rule is applied; only verified ad placeholders are hidden with display:none. Re-checked 2026-11-05 in Chrome 157 at 1024-2560x900: cleanup removed every matched ad container, and the 1600px layout cap left 473px side gutters at 2560px (measured; see docs/browser-verification.md)."
   }
 }

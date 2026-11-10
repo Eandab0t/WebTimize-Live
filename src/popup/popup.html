@@ -11,38 +11,63 @@
     <header class="brand">
       <img class="mark" src="../../icons/icon-128.png" alt="" width="34" height="34">
       <div class="brand-copy">
-        <h1>WebTimize Live</h1>
-        <p>Local page cleanup</p>
+        <p class="eyebrow">WebTimize</p>
+        <h1>Live</h1>
       </div>
-      <span id="globalState" class="pill">On</span>
+      <span id="globalState" class="pill" role="status" aria-live="polite">On</span>
     </header>
+
+    <p id="errorBanner" class="error" role="alert" hidden></p>
 
     <section class="card">
       <div class="row">
         <div>
           <span class="label">Protection</span>
-          <span class="help">Apply supported site profiles on this device.</span>
+          <span class="help">Apply tested profiles on this device.</span>
         </div>
         <label class="switch">
-          <input id="globalToggle" type="checkbox" aria-label="Enable WebTimize Live">
+          <input id="globalToggle" type="checkbox" aria-label="Enable WebTimize Live" disabled>
           <span class="slider"></span>
         </label>
       </div>
+      <p id="globalNote" class="hint">Loading settings…</p>
     </section>
 
     <section id="siteCard" class="card" hidden>
       <div class="site-head">
-        <div>
+        <div class="site-title">
           <span class="eyebrow">This website</span>
           <h2 id="siteName">Current site</h2>
+          <p id="siteHost" class="host"></p>
         </div>
-        <span id="siteStatus" class="status">Active</span>
+        <span id="siteStatus" class="status" role="status" aria-live="polite">Active</span>
       </div>
+
+      <p id="siteNote" class="hint"></p>
+
+      <fieldset class="mode-group">
+        <legend>Site behavior</legend>
+        <div class="mode-options">
+          <label class="mode">
+            <input id="siteModeInherit" type="radio" name="siteMode" value="inherit">
+            <strong>Inherit</strong>
+          </label>
+          <label class="mode">
+            <input id="siteModeEnabled" type="radio" name="siteMode" value="enabled">
+            <strong>Enable</strong>
+          </label>
+          <label class="mode">
+            <input id="siteModePaused" type="radio" name="siteMode" value="paused">
+            <strong>Disable</strong>
+          </label>
+        </div>
+        <p class="hint">Inherit follows global. Enable clears a pause.</p>
+      </fieldset>
 
       <div class="row">
         <div>
           <span class="label">Page cleanup</span>
-          <span class="help">Hide verified ad placeholders and promotional slots.</span>
+          <span class="help">Hide ad placeholders.</span>
         </div>
         <label class="switch">
           <input id="cleanupToggle" type="checkbox" aria-label="Enable page cleanup">
@@ -53,7 +78,7 @@
       <div class="row">
         <div>
           <span class="label">Layout recovery</span>
-          <span class="help">Use the available page width instead of fixed margins.</span>
+          <span class="help">Use the full page width.</span>
         </div>
         <label class="switch">
           <input id="layoutToggle" type="checkbox" aria-label="Enable layout recovery">
@@ -64,7 +89,7 @@
       <div class="row">
         <div>
           <span class="label">Network rules</span>
-          <span class="help">Optional request blocking from this profile.</span>
+          <span class="help">Optional profile request blocking.</span>
         </div>
         <label class="switch">
           <input id="networkToggle" type="checkbox" aria-label="Enable network rules">
@@ -72,21 +97,26 @@
         </label>
       </div>
       <p id="networkHint" class="hint" hidden>This profile ships without network rules.</p>
+      <p id="staleWarning" class="warning" hidden></p>
       <p id="profileMeta" class="meta"></p>
     </section>
 
     <section id="unsupportedCard" class="card empty" hidden>
-      <span class="eyebrow">Not supported yet</span>
+      <span class="eyebrow">Not supported here</span>
       <h2 id="unsupportedTitle">No profile for this site</h2>
       <p class="help">WebTimize Live only changes sites with a tested, versioned profile. Nothing on this page has been modified.</p>
     </section>
 
     <footer class="footer">
-      <button id="settingsButton" class="text-button" type="button">Settings</button>
+      <button id="settingsButton" class="text-button" type="button">Settings &amp; profiles</button>
       <span id="version" class="version"></span>
     </footer>
+    <p id="saveState" class="save-state" role="status" aria-live="polite"></p>
   </main>
+  <script src="../shared/browser-api.js"></script>
   <script src="../shared/settings.js"></script>
+  <script src="../shared/profile.js"></script>
+  <script src="../shared/presentation.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

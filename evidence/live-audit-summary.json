@@ -1,0 +1,1177 @@
+{
+  "generatedAt": "2026-11-06T06:54:10.793Z",
+  "chrome": {
+    "browser": "Chrome/157.0.8103.39",
+    "protocolVersion": "1.3",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+  },
+  "extensionId": "aanjkafabmilibapmfeeajikpahifpbm",
+  "checks": {
+    "total": 168,
+    "passed": 168,
+    "failed": 0
+  },
+  "campaign": {
+    "frame": {
+      "x": 240,
+      "y": 66,
+      "w": 785,
+      "h": 589,
+      "display": "block",
+      "src": "https://www.coolmathgames.com/0-drift-boss/play"
+    },
+    "gameDoc": {
+      "ready": "complete",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 785,
+        "h": 589,
+        "width": 1279,
+        "height": 960
+      },
+      "styleCount": 0,
+      "flag": null
+    },
+    "footer": {
+      "x": 0,
+      "y": 3470,
+      "w": 1425,
+      "h": 708
+    },
+    "nav": 105,
+    "account": true,
+    "matched": 32,
+    "visible": 0
+  },
+  "viewports": [
+    {
+      "viewport": "320x568",
+      "wrapper": 360,
+      "maxWidth": "100%",
+      "client": 305,
+      "scroll": 360,
+      "baselineScroll": 360,
+      "height": 11415,
+      "baselineHeight": 11889,
+      "nav": 41,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "375x667",
+      "wrapper": 360,
+      "maxWidth": "100%",
+      "client": 360,
+      "scroll": 360,
+      "baselineScroll": 360,
+      "height": 11415,
+      "baselineHeight": 11865,
+      "nav": 41,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "430x932",
+      "wrapper": 415,
+      "maxWidth": "100%",
+      "client": 415,
+      "scroll": 415,
+      "baselineScroll": 415,
+      "height": 11321,
+      "baselineHeight": 11771,
+      "nav": 41,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "596x900",
+      "wrapper": 581,
+      "maxWidth": "100%",
+      "client": 581,
+      "scroll": 581,
+      "baselineScroll": 581,
+      "height": 11310,
+      "baselineHeight": 11760,
+      "nav": 41,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "768x1024",
+      "wrapper": 753,
+      "maxWidth": "100%",
+      "client": 753,
+      "scroll": 753,
+      "baselineScroll": 753,
+      "height": 7217,
+      "baselineHeight": 7867,
+      "nav": 41,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "900x900",
+      "wrapper": 885,
+      "maxWidth": "100%",
+      "client": 885,
+      "scroll": 885,
+      "baselineScroll": 885,
+      "height": 7499,
+      "baselineHeight": 8149,
+      "nav": 41,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "1024x768",
+      "wrapper": 1009,
+      "maxWidth": "1600px",
+      "client": 1009,
+      "scroll": 1009,
+      "baselineScroll": 1009,
+      "height": 6684,
+      "baselineHeight": 7374,
+      "nav": 103,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "1280x800",
+      "wrapper": 1265,
+      "maxWidth": "1600px",
+      "client": 1265,
+      "scroll": 1265,
+      "baselineScroll": 1265,
+      "height": 7223,
+      "baselineHeight": 7898,
+      "nav": 103,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "1440x900",
+      "wrapper": 1425,
+      "maxWidth": "1600px",
+      "client": 1425,
+      "scroll": 1425,
+      "baselineScroll": 1425,
+      "height": 6496,
+      "baselineHeight": 6609,
+      "nav": 103,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "1600x1000",
+      "wrapper": 1585,
+      "maxWidth": "1600px",
+      "client": 1585,
+      "scroll": 1585,
+      "baselineScroll": 1585,
+      "height": 6526,
+      "baselineHeight": 6763,
+      "nav": 103,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "1920x1080",
+      "wrapper": 1600,
+      "maxWidth": "1600px",
+      "client": 1905,
+      "scroll": 1905,
+      "baselineScroll": 1905,
+      "height": 6553,
+      "baselineHeight": 6763,
+      "nav": 103,
+      "matched": 10,
+      "visible": 0
+    },
+    {
+      "viewport": "2560x1440",
+      "wrapper": 1600,
+      "maxWidth": "1600px",
+      "client": 2545,
+      "scroll": 2545,
+      "baselineScroll": 2545,
+      "height": 6553,
+      "baselineHeight": 6763,
+      "nav": 103,
+      "matched": 10,
+      "visible": 0
+    }
+  ],
+  "zooms": [
+    {
+      "zoom": "80%",
+      "css": "1800x1125",
+      "client": 1785,
+      "scroll": 1785,
+      "maxWidth": "1600px",
+      "tabStops": 8,
+      "outlineMissing": 0
+    },
+    {
+      "zoom": "90%",
+      "css": "1600x1000",
+      "client": 1585,
+      "scroll": 1585,
+      "maxWidth": "1600px",
+      "tabStops": 8,
+      "outlineMissing": 0
+    },
+    {
+      "zoom": "100%",
+      "css": "1440x900",
+      "client": 1425,
+      "scroll": 1425,
+      "maxWidth": "1600px",
+      "tabStops": 8,
+      "outlineMissing": 0
+    },
+    {
+      "zoom": "110%",
+      "css": "1309x818",
+      "client": 1294,
+      "scroll": 1294,
+      "maxWidth": "1600px",
+      "tabStops": 8,
+      "outlineMissing": 0
+    },
+    {
+      "zoom": "125%",
+      "css": "1152x720",
+      "client": 1137,
+      "scroll": 1137,
+      "maxWidth": "1600px",
+      "tabStops": 8,
+      "outlineMissing": 0
+    },
+    {
+      "zoom": "150%",
+      "css": "960x600",
+      "client": 945,
+      "scroll": 945,
+      "maxWidth": "100%",
+      "tabStops": 8,
+      "outlineMissing": 0
+    },
+    {
+      "zoom": "175%",
+      "css": "823x514",
+      "client": 808,
+      "scroll": 808,
+      "maxWidth": "100%",
+      "tabStops": 8,
+      "outlineMissing": 0
+    },
+    {
+      "zoom": "200%",
+      "css": "720x450",
+      "client": 705,
+      "scroll": 705,
+      "maxWidth": "100%",
+      "tabStops": 8,
+      "outlineMissing": 0
+    }
+  ],
+  "gameSizes": [
+    {
+      "viewport": "320x568",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 320,
+        "h": 568,
+        "width": 540,
+        "height": 960
+      },
+      "client": 320,
+      "scroll": 320,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "375x667",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 375,
+        "h": 667,
+        "width": 540,
+        "height": 960
+      },
+      "client": 375,
+      "scroll": 375,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "430x932",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 430,
+        "h": 932,
+        "width": 540,
+        "height": 1170
+      },
+      "client": 430,
+      "scroll": 430,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "596x900",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 596,
+        "h": 900,
+        "width": 635,
+        "height": 960
+      },
+      "client": 596,
+      "scroll": 596,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "768x1024",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 1024,
+        "width": 720,
+        "height": 960
+      },
+      "client": 768,
+      "scroll": 768,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "900x900",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 900,
+        "h": 900,
+        "width": 960,
+        "height": 960
+      },
+      "client": 900,
+      "scroll": 900,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "1024x768",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 768,
+        "width": 1280,
+        "height": 960
+      },
+      "client": 1024,
+      "scroll": 1024,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "1280x800",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 800,
+        "width": 1536,
+        "height": 960
+      },
+      "client": 1280,
+      "scroll": 1280,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "1440x900",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 900,
+        "width": 1536,
+        "height": 960
+      },
+      "client": 1440,
+      "scroll": 1440,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "1600x1000",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 1600,
+        "h": 1000,
+        "width": 1536,
+        "height": 960
+      },
+      "client": 1600,
+      "scroll": 1600,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "1920x1080",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "width": 1706,
+        "height": 960
+      },
+      "client": 1920,
+      "scroll": 1920,
+      "matched": 0,
+      "visible": 0
+    },
+    {
+      "viewport": "2560x1440",
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "w": 2560,
+        "h": 1440,
+        "width": 1706,
+        "height": 960
+      },
+      "client": 2560,
+      "scroll": 2560,
+      "matched": 0,
+      "visible": 0
+    }
+  ],
+  "focus": {
+    "probe": {
+      "selector": "leaderboard-atf",
+      "active": true,
+      "scrollY": 1200
+    },
+    "events": {
+      "blur": 1,
+      "focusout": 1
+    },
+    "activeElement": {
+      "tag": "BODY",
+      "id": ""
+    },
+    "heightBefore": 6609,
+    "heightAfter": 6496,
+    "scroll": 1200,
+    "removedPixels": 113
+  },
+  "dynamic": {
+    "adDisplay": "none",
+    "genericDisplay": "block"
+  },
+  "settings": {
+    "layoutOverride": "1188px",
+    "siteOverrideVisible": 10,
+    "exceptionStyle": false,
+    "resetStyles": 1,
+    "rapidMaxWidth": "1188px",
+    "persistedStyleChars": 395
+  },
+  "selectors": [
+    {
+      "page": "homepage",
+      "selector": "[id^=\"leaderboard-\"]",
+      "matched": 5,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "leaderboard-atf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] m-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf1",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf3",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf2",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "homepage",
+      "selector": "[id^=\"med-rect-\"]",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "homepage",
+      "selector": "[id^=\"sky-\"]",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "homepage",
+      "selector": ".ad-placeholder",
+      "matched": 5,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "leaderboard-atf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] m-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf1",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf3",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf2",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "homepage",
+      "selector": "#adBanner",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "homepage",
+      "selector": ".adLeaderboard",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "homepage",
+      "selector": ".adBanner",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "homepage",
+      "selector": ".leaderboard_ad",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "homepage",
+      "selector": ".pw_report_ad_container",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "homepage",
+      "selector": ".playwire_report_ad_link",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "homepage",
+      "selector": "#fallMerchPromoTile",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "campaign",
+      "selector": "[id^=\"leaderboard-\"]",
+      "matched": 2,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "leaderboard-atf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-btf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto 9",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "campaign",
+      "selector": "[id^=\"med-rect-\"]",
+      "matched": 3,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "med-rect-btf2",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] !min-h-[2",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "med-rect-atf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mt-[-8px]",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "med-rect-btf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] ",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "campaign",
+      "selector": "[id^=\"sky-\"]",
+      "matched": 2,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "sky-atf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] ",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "sky-btf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] ",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "campaign",
+      "selector": ".ad-placeholder",
+      "matched": 7,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "sky-atf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] ",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "leaderboard-atf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mx-auto",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "med-rect-btf2",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] !min-h-[2",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "med-rect-atf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] mt-[-8px]",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        },
+        {
+          "tag": "DIV",
+          "id": "med-rect-btf",
+          "cls": "ad-placeholder block min-h-[90px] md:min-h-[130px] ",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "campaign",
+      "selector": "#adBanner",
+      "matched": 1,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "adBanner",
+          "cls": "adLeaderboard adBanner leaderboard_ad",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "campaign",
+      "selector": ".adLeaderboard",
+      "matched": 1,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "adBanner",
+          "cls": "adLeaderboard adBanner leaderboard_ad",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "campaign",
+      "selector": ".adBanner",
+      "matched": 1,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "adBanner",
+          "cls": "adLeaderboard adBanner leaderboard_ad",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "campaign",
+      "selector": ".leaderboard_ad",
+      "matched": 1,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "adBanner",
+          "cls": "adLeaderboard adBanner leaderboard_ad",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "campaign",
+      "selector": ".pw_report_ad_container",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "campaign",
+      "selector": ".playwire_report_ad_link",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "campaign",
+      "selector": "#fallMerchPromoTile",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "play",
+      "selector": "[id^=\"leaderboard-\"]",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "play",
+      "selector": "[id^=\"med-rect-\"]",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "play",
+      "selector": "[id^=\"sky-\"]",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "play",
+      "selector": ".ad-placeholder",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "play",
+      "selector": "#adBanner",
+      "matched": 1,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "adBanner",
+          "cls": "adLeaderboard adBanner leaderboard_ad",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "play",
+      "selector": ".adLeaderboard",
+      "matched": 1,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "adBanner",
+          "cls": "adLeaderboard adBanner leaderboard_ad",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "play",
+      "selector": ".adBanner",
+      "matched": 1,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "adBanner",
+          "cls": "adLeaderboard adBanner leaderboard_ad",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "play",
+      "selector": ".leaderboard_ad",
+      "matched": 1,
+      "visible": 0,
+      "sample": [
+        {
+          "tag": "DIV",
+          "id": "adBanner",
+          "cls": "adLeaderboard adBanner leaderboard_ad",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "text": "",
+          "links": 0
+        }
+      ]
+    },
+    {
+      "page": "play",
+      "selector": ".pw_report_ad_container",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "play",
+      "selector": ".playwire_report_ad_link",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    },
+    {
+      "page": "play",
+      "selector": "#fallMerchPromoTile",
+      "matched": 0,
+      "visible": 0,
+      "sample": []
+    }
+  ],
+  "restart": {
+    "before": {
+      "extensionId": "aanjkafabmilibapmfeeajikpahifpbm",
+      "layout": false,
+      "state": {
+        "style": true,
+        "max": "1188px"
+      }
+    },
+    "after": {
+      "sameExtensionId": true,
+      "layout": false,
+      "state": {
+        "style": true,
+        "max": "1188px"
+      }
+    }
+  }
+}

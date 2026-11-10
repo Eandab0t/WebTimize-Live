@@ -1,0 +1,98 @@
+{
+  "browser": {
+    "browser": "Chrome/157.0.8103.39",
+    "protocolVersion": "1.3",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+  },
+  "extension": {
+    "source": "dist/chrome",
+    "id": "fpcapgbkgbmcdjgjefpfajjocboclhkh",
+    "version": "0.3.0"
+  },
+  "fixture": "http://127.0.0.1:57961/",
+  "checks": [
+    {
+      "name": "Chrome loads the generated Chrome build",
+      "passed": true,
+      "detail": "fpcapgbkgbmcdjgjefpfajjocboclhkh v0.3.0"
+    },
+    {
+      "name": "content script applies the profile on the controlled fixture",
+      "passed": true
+    },
+    {
+      "name": "layout rule changes the fixture",
+      "passed": true,
+      "detail": "max-width=none"
+    },
+    {
+      "name": "popup identifies the active supported site",
+      "passed": true,
+      "detail": "Local Fixture"
+    },
+    {
+      "name": "popup reflects a global setting change",
+      "passed": true
+    },
+    {
+      "name": "site pause remains a sparse override",
+      "passed": true,
+      "detail": "{\"127.0.0.1\":{\"enabled\":false}}"
+    },
+    {
+      "name": "choosing inherit clears the site override",
+      "passed": true
+    },
+    {
+      "name": "rapid toggles end in one stored state",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "DNR rule is installed and blocks the fixture script",
+      "passed": true,
+      "detail": "before=true, rules=1, after=false"
+    },
+    {
+      "name": "popup handles an unsupported active page",
+      "passed": true,
+      "detail": "{\"title\":\"This page is not a website\",\"cardHidden\":false}"
+    },
+    {
+      "name": "toolbar action popup can be opened through the action API",
+      "passed": true,
+      "detail": "{\"opened\":true,\"targets\":2}"
+    },
+    {
+      "name": "options page renders in desktop and narrow viewports",
+      "passed": true,
+      "detail": "{\"scrollWidth\":390,\"clientWidth\":390,\"footerRight\":379}"
+    }
+  ],
+  "settings": {
+    "inherited": {
+      "enabled": true,
+      "exceptions": [],
+      "features": {
+        "cleanup": true,
+        "layout": true,
+        "network": false
+      },
+      "schemaVersion": 2,
+      "sites": {}
+    }
+  },
+  "console": [],
+  "failures": [],
+  "actionPopup": {
+    "opened": true,
+    "targets": 2
+  },
+  "optionsLayout": {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "footerRight": 379
+  },
+  "passed": true,
+  "finishedAt": "2026-11-07T11:00:26.381Z"
+}

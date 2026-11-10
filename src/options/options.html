@@ -26,7 +26,7 @@
           <p>Turn every supported profile on or off.</p>
         </div>
         <label class="switch">
-          <input id="globalToggle" type="checkbox" aria-label="Enable WebTimize Live">
+          <input id="globalToggle" type="checkbox" aria-label="Enable WebTimize Live" disabled>
           <span class="slider"></span>
         </label>
       </div>
@@ -41,21 +41,21 @@
       </div>
       <div class="feature-grid">
         <label class="check-row">
-          <input id="defaultCleanup" type="checkbox">
+          <input id="defaultCleanup" type="checkbox" disabled>
           <span><strong>Page cleanup</strong><small>Hide verified ad placeholders.</small></span>
         </label>
         <label class="check-row">
-          <input id="defaultLayout" type="checkbox">
+          <input id="defaultLayout" type="checkbox" disabled>
           <span><strong>Layout recovery</strong><small>Reclaim wasted margins and side rails.</small></span>
         </label>
         <label class="check-row">
-          <input id="defaultNetwork" type="checkbox">
+          <input id="defaultNetwork" type="checkbox" disabled>
           <span><strong>Network rules</strong><small>Only when a profile ships verified rules.</small></span>
         </label>
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel" id="sites">
       <div class="panel-head">
         <div>
           <h2>Supported sites</h2>
@@ -74,26 +74,43 @@
       </div>
       <form id="exceptionForm" class="inline-form">
         <label class="sr-only" for="exceptionInput">Domain to exclude</label>
-        <input id="exceptionInput" type="text" inputmode="url" autocomplete="off" placeholder="example.com">
-        <button type="submit">Add exception</button>
+        <input id="exceptionInput" type="text" inputmode="url" autocomplete="off" placeholder="example.com" disabled>
+        <button type="submit" disabled>Add exception</button>
       </form>
       <div id="exceptionsList" class="chips"></div>
+    </section>
+
+    <section class="panel" id="profiles">
+      <div class="panel-head">
+        <div>
+          <h2>Profile diagnostics</h2>
+          <p>What is installed, when it was last verified, and what it can change.</p>
+        </div>
+      </div>
+      <div id="diagnostics" class="diagnostics"></div>
+      <div class="inline-form">
+        <button id="syncRulesButton" class="button secondary" type="button" disabled>Re-apply network rules</button>
+      </div>
+      <p class="muted">Network filtering stays off unless a profile ships verified rules and you enable it for that site.</p>
     </section>
 
     <section class="panel privacy">
       <div>
         <h2>Privacy and limits</h2>
-        <p>Settings stay in Chrome sync storage. Profiles are local extension files. WebTimize Live sends no browsing data anywhere and does not run remote JavaScript.</p>
+        <p>Settings stay in browser sync storage. Profiles are local extension files. WebTimize Live sends no browsing data anywhere and does not run remote JavaScript.</p>
         <p class="muted">It cannot rewrite every website response, hide every advertisement, or guarantee that a site's layout will never change. Profiles are versioned and can be disabled at any time.</p>
       </div>
     </section>
 
     <footer class="footer">
-      <button id="restoreButton" class="button secondary" type="button">Restore defaults</button>
-      <span id="saveState" class="save-state" role="status" aria-live="polite">Saved locally</span>
+      <button id="restoreButton" class="button secondary" type="button" disabled>Restore defaults</button>
+      <span id="saveState" class="save-state" role="status" aria-live="polite">Saved to browser sync</span>
     </footer>
   </main>
+  <script src="../shared/browser-api.js"></script>
   <script src="../shared/settings.js"></script>
+  <script src="../shared/profile.js"></script>
+  <script src="../shared/presentation.js"></script>
   <script src="options.js"></script>
 </body>
 </html>

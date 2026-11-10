@@ -202,17 +202,53 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 }
 .chip button:hover { transform: none; box-shadow: none; text-decoration: underline; }
 
+.muted { color: var(--muted); }
+.warning {
+  margin-top: 8px;
+  padding: 7px 9px;
+  border: 1.5px dashed var(--danger);
+  color: var(--danger);
+  font-size: 12px;
+}
+
+.diagnostics { display: grid; gap: 10px; margin-top: 14px; }
+.diagnostic {
+  padding: 11px 13px;
+  background: var(--canvas);
+  border: 1.5px solid var(--line);
+}
+.diagnostic p { margin-top: 3px; color: var(--muted); font-size: 12.5px; }
+
+.link-button {
+  padding: 0;
+  border: 0;
+  border-bottom: 1.5px solid var(--accent);
+  background: none;
+  box-shadow: none;
+  color: var(--accent);
+  font: 700 11px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.link-button:hover { transform: none; box-shadow: none; background: color-mix(in srgb, var(--accent) 10%, transparent); }
+
 .privacy { border-left: 8px solid var(--grey); }
 .privacy .muted { margin-top: 10px; color: var(--muted); font-size: 13px; }
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   padding: 6px 2px;
 }
+.save-state.error { color: var(--danger); }
 .save-state {
+  min-width: 0;
   color: var(--muted);
+  overflow-wrap: anywhere;
+  text-align: right;
   font: 500 11px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -262,4 +298,9 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   .masthead { padding: 20px; }
   .panel { padding: 18px; }
   .site { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider, .slider::after, button { transition: none; }
+  button:hover, button:active { transform: none; }
 }

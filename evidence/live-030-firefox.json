@@ -1,0 +1,80 @@
+{
+  "browser": {
+    "browserName": "firefox",
+    "browserVersion": "159.0.1",
+    "platformName": "windows"
+  },
+  "extension": {
+    "source": "dist/firefox",
+    "id": "webtimize-live@webtimize.dev",
+    "uuid": "4f0f4c1e-6f6f-4b8c-9a8e-5f6b7c8d9e0a",
+    "version": null,
+    "installedId": "webtimize-live@webtimize.dev"
+  },
+  "fixture": "http://127.0.0.1:52345/",
+  "checks": [
+    {
+      "name": "Firefox starts under WebDriver",
+      "passed": true,
+      "detail": "firefox 159.0.1"
+    },
+    {
+      "name": "Firefox installs the generated Firefox build as a temporary add-on",
+      "passed": true,
+      "detail": "webtimize-live@webtimize.dev"
+    },
+    {
+      "name": "Firefox content script applies the controlled profile",
+      "passed": true,
+      "detail": "max-width=none"
+    },
+    {
+      "name": "Firefox popup identifies the controlled site",
+      "passed": true,
+      "detail": "{\"height\":734,\"host\":\"127.0.0.1\",\"site\":\"Local Fixture\",\"status\":\"Active\",\"width\":500}"
+    },
+    {
+      "name": "Firefox popup reacts to storage changes",
+      "passed": true
+    },
+    {
+      "name": "Firefox clearing a pause removes the sparse site override",
+      "passed": true
+    },
+    {
+      "name": "Firefox DNR rule blocks the fixture script",
+      "passed": true,
+      "detail": "before=true, rules=1, after=false"
+    },
+    {
+      "name": "Firefox options render in desktop and narrow windows",
+      "passed": true,
+      "detail": "{\"viewport\":500,\"width\":500}"
+    }
+  ],
+  "screenshots": [
+    "firefox-popup-inherited.png",
+    "firefox-popup-site-paused.png",
+    "firefox-options-top.png",
+    "firefox-options-bottom.png",
+    "firefox-options-narrow-top.png",
+    "firefox-options-narrow-bottom.png"
+  ],
+  "console": [],
+  "failures": [],
+  "settings": {
+    "defaultSettings": {
+      "enabled": true,
+      "exceptions": [],
+      "features": {
+        "cleanup": true,
+        "layout": true,
+        "network": false
+      },
+      "schemaVersion": 2,
+      "sites": {}
+    }
+  },
+  "passed": true,
+  "finishedAt": "2026-11-07T11:01:38.638Z"
+}
