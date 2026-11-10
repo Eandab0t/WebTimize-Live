@@ -4,6 +4,8 @@ param(
   [ValidateSet('chrome', 'firefox')]
   [string]$Browser,
 
+  [switch]$ForSubmission,
+
   [switch]$Force
 )
 
@@ -15,6 +17,20 @@ $manifestPath = Join-Path $root 'manifest.json'
 $manifest = Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json
 $source = Join-Path $root (Join-Path 'dist' $Browser)
 $output = Join-Path $root (Join-Path 'dist' ("WebTimize-Live-v{0}-{1}.zip" -f $manifest.version, $Browser))
+
+if ($ForSubmission) {
+  $submissionDocs = @(
+    (Join-Path $root 'CHROMEWEBSTORE.md'),
+    (Join-Path $root 'docs/PRIVACY.md')
+  )
+
+  foreach ($doc in $submissionDocs) {
+    $text = Get-Content -LiteralPath $doc -Raw
+    if ($text -match '\[ACTION REQUIRED:') {
+      throw "Submission metadata is incomplete: $doc still contains an ACTION REQUIRED placeholder."
+    }
+  }
+}
 
 if (-not (Test-Path -LiteralPath $source -PathType Container)) {
   throw "Missing $source. Run 'npm run build:$Browser' first."

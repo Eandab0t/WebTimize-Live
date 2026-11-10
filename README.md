@@ -25,7 +25,13 @@ powershell -NoProfile -File scripts/package-extension.ps1 firefox
 
 The packaging script creates a clean store-submission ZIP from a validated build. It refuses to
 overwrite an existing archive unless `-Force` is supplied. Review the store metadata and privacy
-policy in [CHROMEWEBSTORE.md](CHROMEWEBSTORE.md) before submitting.
+policy in [CHROMEWEBSTORE.md](CHROMEWEBSTORE.md) before submitting. After completing all store
+metadata, use `-ForSubmission`; it rejects the package if required-contact or URL placeholders
+remain:
+
+```powershell
+powershell -NoProfile -File scripts/package-extension.ps1 chrome -ForSubmission
+```
 
 **Chrome:** open `chrome://extensions`, enable **Developer mode**, choose **Load unpacked**, and
 select `dist/chrome`.
