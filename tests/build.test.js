@@ -21,7 +21,7 @@ test("Chrome and Firefox manifests preserve one shared permission and code model
   ]);
   assert.equal(firefox.background.service_worker, undefined);
   assert.equal(firefox.browser_specific_settings.gecko.id, FIREFOX_ID);
-  assert.equal(firefox.browser_specific_settings.gecko.strict_min_version, "140.0");
+  assert.equal(firefox.browser_specific_settings.gecko.strict_min_version, "142.0");
   assert.deepEqual(firefox.browser_specific_settings.gecko.data_collection_permissions.required, ["none"]);
   assert.deepEqual(chrome.permissions, firefox.permissions);
   assert.deepEqual(chrome.host_permissions, firefox.host_permissions);

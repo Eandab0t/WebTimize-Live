@@ -67,7 +67,7 @@ narrow-options check uses 500 px. Chrome provides the 390 px options evidence.
 
 - `background.scripts` is used instead of `background.service_worker`.
 - `browser_specific_settings.gecko.id` is `webtimize-live@webtimize.dev`.
-- `strict_min_version` is `140.0`.
+- `strict_min_version` is `142.0`.
 - `data_collection_permissions.required` is `["none"]`.
 - The permission set remains `storage`, `activeTab` and `declarativeNetRequest`; host access remains
   `coolmathgames.com` and `www.coolmathgames.com`.

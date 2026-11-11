@@ -13,7 +13,7 @@
 
 - **Chrome and Firefox builds from one source tree**: `npm run build` writes dedicated
   `dist/chrome` and `dist/firefox` directories. The Firefox build uses a MV3 event page
-  (`background.scripts`), the stable id `webtimize-live@webtimize.dev`, `strict_min_version` 140.0
+  (`background.scripts`), the stable id `webtimize-live@webtimize.dev`, `strict_min_version` 142.0
   and `data_collection_permissions` of `none`.
 - A small Promise-based `WebTimizeBrowser` adapter. Firefox uses the native `browser` namespace and
   Chrome's callback APIs are wrapped without a `webextension-polyfill` dependency.

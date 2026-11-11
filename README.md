@@ -36,9 +36,9 @@ powershell -NoProfile -File scripts/package-extension.ps1 chrome -ForSubmission
 **Chrome:** open `chrome://extensions`, enable **Developer mode**, choose **Load unpacked**, and
 select `dist/chrome`.
 
-**Firefox 140+:** open `about:debugging#/runtime/this-firefox`, choose **Load Temporary Add-on**,
+**Firefox 142+:** open `about:debugging#/runtime/this-firefox`, choose **Load Temporary Add-on**,
 and select `dist/firefox/manifest.json`. The build has the stable id
-`webtimize-live@webtimize.dev`, a `strict_min_version` of 140.0 and a `data_collection_permissions`
+`webtimize-live@webtimize.dev`, a `strict_min_version` of 142.0 and a `data_collection_permissions`
 declaration of `none`. A normal signed install on a release build is a separate packaging step; the
 temporary add-on is the development path used here.
 

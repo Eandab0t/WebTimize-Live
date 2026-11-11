@@ -22,7 +22,7 @@ function manifestFor(browser) {
     manifest.browser_specific_settings = {
       gecko: {
         id: FIREFOX_ID,
-        strict_min_version: '140.0',
+        strict_min_version: '142.0',
         data_collection_permissions: { required: ['none'] }
       }
     };
@@ -58,7 +58,7 @@ function validate(manifest, browser, directory) {
     if (manifest.background?.service_worker) errors.push('Firefox build must not use background.service_worker');
     if (!manifest.background?.scripts?.length) errors.push('Firefox build needs background.scripts');
     if (manifest.browser_specific_settings?.gecko?.id !== FIREFOX_ID) errors.push('Firefox extension id is missing');
-    if (manifest.browser_specific_settings?.gecko?.strict_min_version !== '140.0') errors.push('Firefox minimum version must be 140.0');
+    if (manifest.browser_specific_settings?.gecko?.strict_min_version !== '142.0') errors.push('Firefox minimum version must be 142.0');
     const data = manifest.browser_specific_settings?.gecko?.data_collection_permissions?.required;
     if (!Array.isArray(data) || data.length !== 1 || data[0] !== 'none') {
       errors.push('Firefox data_collection_permissions must be ["none"]');
