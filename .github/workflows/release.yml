@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Verify release tag matches extension version
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: node -e "const fs=require('node:fs'); const tag=process.env.RELEASE_TAG.replace(/^v/, ''); const version=JSON.parse(fs.readFileSync('manifest.json', 'utf8')).version; if (tag !== version) throw new Error(`release tag ${tag} does not match extension version ${version}`);"
+
       - name: Install and test
         run: |
           npm install --ignore-scripts
