@@ -49,7 +49,7 @@ stylesheet; the validator rejects `@import`, `javascript:`, `expression(...)`, `
 `-moz-binding`, every `url(...)` resource (including relative URLs) and unbalanced braces.
 
 Selectors are inserted into that stylesheet, so they must not contain `{ } ; < > @`, and they must
-not target the whole document (`*`, `html`, `body`). Each selector is also checked against the live
+not target the whole document (`*`, `html`, `body`, `:root`, `:is(html)`, `:where(body)`). Each selector is also checked against the live
 DOM by the content script; a selector the browser rejects is dropped with a console warning while
 the rest of the profile still applies.
 
