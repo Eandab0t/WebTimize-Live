@@ -41,5 +41,5 @@ This policy will be updated if the extension's data practices change. The date a
 
 ## Contact
 
-`[ACTION REQUIRED: add a monitored public privacy contact email or support URL before store submission]`
+Questions about this policy: `eandab0t@outlook.com`. You can also open an issue at `https://github.com/Eandab0t/WebTimize-Live/issues`.
 

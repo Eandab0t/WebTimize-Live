@@ -1,7 +1,7 @@
 # Chrome Web Store Listing — WebTimize Live
 
-> Last Updated: 2026-11-09
-> Status: Draft — publisher contact, public policy URL, screenshots, and final store ZIP still require completion.
+> Last Updated: 2026-11-11
+> Status: Draft — contact, policy URL, and screenshots complete; signed store ZIP still requires completion.
 
 ## Store Listing
 
@@ -48,10 +48,10 @@ English
 | Asset | Dimensions | Status | Filename |
 |-------|-----------:|--------|----------|
 | Store Icon | 128×128 PNG | ✅ Ready | `icons/icon-128.png` |
-| Screenshot 1 | 1280×800 or 640×400 | 🟡 Needs final store export | `evidence/live-1440x900-styled.jpg` |
-| Screenshot 2 | 1280×800 or 640×400 | 🟡 Needs final store export | `evidence/live-030-chrome-options.png` |
-| Screenshot 3 | 1280×800 or 640×400 | 🟡 Needs final store export | `evidence/live-030-chrome-popup-inherited.png` |
-| Small Promo Tile | 440×280 | ⬜ Not created | — |
+| Screenshot 1 | 1280×800 | ✅ Ready | `evidence/store-screenshot-1-styled-1280x800.png` |
+| Screenshot 2 | 1280×800 | ✅ Ready | `evidence/store-screenshot-2-options-1280x800.png` |
+| Screenshot 3 | 1280×800 | ✅ Ready | `evidence/store-screenshot-3-popup-1280x800.png` |
+| Small Promo Tile | 440×280 | ✅ Ready | `evidence/store-promo-tile-440x280.png` |
 
 The evidence images are validation captures. Re-export or crop store assets to the exact accepted dimensions and confirm that every screenshot matches the submitted version.
 
@@ -95,11 +95,11 @@ The extension stores user preferences in `chrome.storage.sync`: global feature d
 
 **Publisher Name:** Eandab0t
 
-**Contact Email:** `[ACTION REQUIRED: add a monitored public contact email]`
+**Contact Email:** `eandab0t@outlook.com`
 
 **Support URL:** `https://github.com/Eandab0t/WebTimize-Live/issues`
 
-**Homepage URL:** `[ACTION REQUIRED: choose the public suite or product homepage]`
+**Homepage URL:** `https://github.com/Eandab0t/WebTimize-Live`
 
 ## Version History
 
