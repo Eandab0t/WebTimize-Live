@@ -1,13 +1,13 @@
 # WebTimize Live
 
-A local-first Chrome and Firefox Manifest V3 extension for site-specific layout cleanup. It hides
-verified ad placeholders, reclaims wasted margins and side rails, and applies tested per-site rules.
-No account, proxy, remote code, or WebTimize-operated server.
+WebTimize Live is a small Chrome and Firefox extension for cleaning up supported sites. It hides
+verified ad placeholders, restores wasted layout space, and applies site-specific rules. It does
+not need an account, proxy, remote code, or a WebTimize server.
 
-WebTimize Live is the browsing half of the [WebTimize suite](https://github.com/Eandab0t/WebTimize):
-[WebTimize Compressor](https://github.com/Eandab0t/WebTimize) optimizes a site before deployment;
-Live improves pages you visit after deployment. The two share no runtime, server or account, and
-neither requires the other.
+It is part of the [WebTimize suite](https://github.com/Eandab0t/WebTimize):
+[Compressor](https://github.com/Eandab0t/WebTimize) works before deployment and
+[Inspector](https://github.com/Eandab0t/WebTimize-Inspector) audits the result. Live can be used
+on its own.
 
 ## Build and install for development
 
@@ -258,11 +258,6 @@ local proxy and cannot rewrite arbitrary HTTP response bodies.
 `browser_specific_settings`; the permission set is unchanged.
 
 ## License
-
-## WebTimize suite
-
-- [WebTimize Compressor](https://github.com/Eandab0t/WebTimize) optimizes site assets before deployment.
-- [WebTimize Inspector](https://github.com/Eandab0t/WebTimize-Inspector) audits websites and produces actionable reports.
 
 WebTimize Live is released under the MIT License. See [LICENSE](LICENSE).
 The generated Chrome and Firefox builds include the license file. The extension has no
