@@ -1,3 +1,5 @@
+![WebTimize Live social preview](https://repository-images.githubusercontent.com/1440322792/ac69e864-a801-4ff1-92e6-3cffb0d4d6c2)
+
 # WebTimize Live
 
 WebTimize Live is a small Chrome and Firefox extension for cleaning up supported sites. It hides
