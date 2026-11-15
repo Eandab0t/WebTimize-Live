@@ -259,6 +259,11 @@ local proxy and cannot rewrite arbitrary HTTP response bodies.
 
 ## License
 
+## WebTimize suite
+
+- [WebTimize Compressor](https://github.com/Eandab0t/WebTimize) optimizes site assets before deployment.
+- [WebTimize Inspector](https://github.com/Eandab0t/WebTimize-Inspector) audits websites and produces actionable reports.
+
 WebTimize Live is released under the MIT License. See [LICENSE](LICENSE).
 The generated Chrome and Firefox builds include the license file. The extension has no
 runtime third-party dependencies.
